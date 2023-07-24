@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>  
+</head>
+<body>
+  <section class="wrapper">
+    <div class="container">
+      <!-- Button trigger modal and tooltip -->
+      <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-bs-toggle="tooltip" data-bs-placement="right" title="Дізнатися детальніше">
+        Натисни
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Деталі</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, in similique eaque perspiciatis sit adipisci dicta consectetur iusto voluptatem ullam!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрити</button>
+              <button type="button" class="btn btn-primary">Зрозуміло</button>
+            </div>
+          </div>
+        </div>        
+      </div>
+
+      <div id="liveAlertPlaceholder" class="mineAlert"></div>
+      <button type="button" class="btn btn-warning" id="liveAlertBtn">Повідомлення</button>
+    </div>
+  </section>
+  <!-- moment -->
+ <div class="myDate" id="myDate">
+  
+ </div>
+  <section class="date">
+    <div class="container">
+      <button type="button" class="btn btn-danger" id="inputButton">Ввести дату</button>
+<!--  -->
+      <div class="input-group mb-3 inputForm">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon1">Відправити</button>
+        <input type="text" class="form-control " placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1">
+        
+      </div>  
+      <p class="message text-danger"></p>    
+    </div>
+
+    
+  </section>
+ 
+  <script src="js/bootstrap.min.js"></script>  
+  <script src="js/bootstrap.bundle.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script> 
+  <script src="mine.js"></script>
+</body>
+</html>
